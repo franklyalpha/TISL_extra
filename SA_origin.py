@@ -69,4 +69,4 @@ class slot_attention(nn.Module):
         slots = torch.fill(torch.zeros([batch_size, k, d_slots]), mu)
         return slots + sigma * torch.randn(slots.shape) # this will return sampled slots, each one is different
 
-input = torch.randn([50, 75])
+input = torch.randn([2, 50, 75])
